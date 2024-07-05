@@ -4,6 +4,7 @@
 #include<stdlib.h>
 
 #define TOTAL_QUESTIONS 4
+// these are bugs
 /*full name 
 invalid options
 no special characters in name
