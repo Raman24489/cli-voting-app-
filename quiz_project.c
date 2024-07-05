@@ -3,7 +3,7 @@
 #include<string.h>
 #include<stdlib.h>
 
-#define TOTAL_QUESTIONS 3
+#define TOTAL_QUESTIONS 4
 /*full name 
 invalid options
 no special characters in name
@@ -18,6 +18,7 @@ typedef struct //structure to store questions data of the quiz.//
     char answer_4[50];
     char correct_answer;
 } quiz_question;// name for the defined struct.//
+
 
 void displayInstructions(char name[]) // starting instruction for the quiz//.
 {
@@ -55,7 +56,14 @@ int main(void)
     strcpy(quiz[2].answer_3,"x===y.");
     strcpy(quiz[2].answer_4,"x DNE y.");
     quiz[2].correct_answer=2;
-    
+
+    strcpy(quiz[3].question,"what is the name of this corrent device?");
+    strcpy(quiz[3].answer_1,"dell g 15");
+    strcpy(quiz[3].answer_2,"lenovo h14.");
+    strcpy(quiz[3].answer_3,"hp victus.");
+    strcpy(quiz[3].answer_4,"mac book.");
+    quiz[3].correct_answer=1;
+   
     char name[50];
     int score=0;
     int answer;
